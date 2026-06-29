@@ -1,18 +1,20 @@
 # AgendaPro
 
-AgendaPro e um sistema de agendamento para profissionais autonomos. A ideia do projeto e demonstrar uma aplicacao com cara de produto real: dashboard, catalogo de servicos, agenda semanal e fluxo de reserva para clientes.
+AgendaPro e um sistema de agendamento para profissionais autonomos. A ideia do projeto e demonstrar uma aplicacao com cara de produto real: login demo, dashboard, catalogo de servicos, agenda semanal e fluxo de reserva para clientes.
 
 ## Preview
 
-O MVP atual usa dados mockados para validar a experiencia antes da integracao com banco de dados e autenticacao.
+O MVP atual usa `localStorage` para salvar login, servicos e agendamentos no navegador. Isso deixa o fluxo funcional sem exigir banco externo na primeira versao.
 
 ## Funcionalidades
 
-- Dashboard com indicadores do dia
-- Lista de proximos atendimentos
-- Catalogo de servicos com preco e duracao
+- Login demo persistido no navegador
+- Dashboard com indicadores de agenda, receita e ocupacao
+- Busca por cliente, telefone, servico, dia ou horario
+- Cadastro de novos servicos
+- Criacao de agendamentos com cliente, telefone, dia, horario e servico
+- Alteracao de status do agendamento
 - Agenda semanal com horarios livres e ocupados
-- Previa de pagina publica para o cliente agendar um horario
 - Interface responsiva para desktop e celular
 
 ## Tecnologias
@@ -25,19 +27,19 @@ O MVP atual usa dados mockados para validar a experiencia antes da integracao co
 
 ## Como rodar localmente
 
-```bash
-npm install
-npm run dev
+```powershell
+npm.cmd install
+npm.cmd run dev
 ```
 
 Depois abra `http://localhost:3000`.
 
 ## Proximos passos
 
-- Adicionar autenticacao
+- Trocar login demo por autenticacao real
 - Criar modelos com Prisma
 - Conectar PostgreSQL
-- Salvar agendamentos reais
+- Salvar agendamentos em banco
 - Criar testes de componentes
 - Publicar na Vercel
 
